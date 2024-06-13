@@ -1,0 +1,40 @@
+.navbar {
+	border-bottom: solid rgba(128, 77, 53, 0.3) 2px;
+}
+.menu-item {
+    padding: 0 12px 12px;
+	color: #804d35;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+.active {
+	border-bottom: solid rgba(128, 77, 53, 0.7);
+}
+.ant-input::placeholder {
+	color: #804d35 !important;
+	opacity: 0.5;
+}
+
+.home {
+	min-height: 100vh;
+	background: url("./assets/home_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.social-media {
+	text-decoration: none;
+	color: white;
+	transition: ease-in-out 0.3s;
+}
+.social-media:hover {
+	transform: scale(1.1);
+}
+.paragraph {
+	padding-bottom: 20px;
+	border-bottom: rgba(255, 255, 255, 0.7) solid 2px;
+    padding: 5px;
+    /* border-radius: 10px;
+    backdrop-filter: blur(2px); 
+    background-color: rgba(255, 255, 255, 0.1);  */
+}
