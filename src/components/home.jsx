@@ -43,7 +43,7 @@ export default function Home() {
 						</p>
 						<p>
 							<span className="text-2xl md:text-4xl font-semibold">+30</span>{" "}
-							<br /> Journeys/Month.
+							<br /> Journey/Month.
 						</p>
 						<p>
 							<span className="text-2xl md:text-4xl font-semibold">+100K</span>{" "}

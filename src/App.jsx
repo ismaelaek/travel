@@ -5,6 +5,7 @@ import Home from './components/home';
 import About from './components/about';
 import Tours from './components/tours';
 import Contact from './components/contact';
+import Footer from './components/footer';
 import './App.css'
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
 					<Route path="/tours" element={<Tours />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/*" element={<h1> Not found</h1>} />
-				</Routes>
+        </Routes>
+        <Footer />
 			</BrowserRouter>
 		</Provider>
 	);
