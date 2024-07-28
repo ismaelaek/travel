@@ -2,15 +2,6 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./navbar";
 import { Avatar, Card } from "antd";
-import Founder from "../assets/founder.jpg";
-import Cofounder from "../assets/cofounder.jpg";
-import Manager from "../assets/manager.jpg";
-import Review1 from "../assets/review1.jpg";
-import Review2 from "../assets/review2.jpg";
-import Review3 from "../assets/review3.jpg";
-import guide1 from "../assets/guide1.png";
-import guide2 from "../assets/guide2.png";
-import guide3 from "../assets/guide3.png";
 import useScrollTrigger from "../hooks/useScrollTrigger";
 
 const fadeIn = {
@@ -172,7 +163,9 @@ export default function About() {
 							<Card>
 								<div className="h-64 overflow-hidden">
 									<img
-										src={Founder}
+										src={
+											"https://img.freepik.com/photos-premium/homme-patron-regardant-camera-souriant-jeune-homme-affaires-banquier-barbe-photo-portrait-gros-plan_321831-5908.jpg"
+										}
 										alt="Founder"
 										className="w-full h-full object-cover rounded-lg"
 									/>
@@ -198,7 +191,9 @@ export default function About() {
 							<Card>
 								<div className="h-64 overflow-hidden">
 									<img
-										src={Cofounder}
+										src={
+											"https://img.freepik.com/free-photo/middle-aged-hispanic-business-woman_23-2151020343.jpg"
+										}
 										alt="Co-founder"
 										className="w-full h-full object-cover rounded-lg"
 									/>
@@ -224,7 +219,9 @@ export default function About() {
 							<Card>
 								<div className="h-64 overflow-hidden">
 									<img
-										src={Manager}
+										src={
+											"https://i.pinimg.com/736x/f8/66/8e/f8668e5328cfb4938903406948383cf6.jpg"
+										}
 										alt="Manager"
 										className="w-full h-full object-cover rounded-lg"
 									/>
@@ -249,7 +246,9 @@ export default function About() {
 							<Card>
 								<div className="h-64 overflow-hidden">
 									<img
-										src={guide1}
+										src={
+											"https://img.freepik.com/free-photo/portrait-smiley-woman_23-2148827181.jpg"
+										}
 										alt="guide1"
 										className="w-full h-full object-cover rounded-lg"
 									/>
@@ -274,7 +273,9 @@ export default function About() {
 							<Card>
 								<div className="h-64 overflow-hidden">
 									<img
-										src={guide2}
+										src={
+											"https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp"
+										}
 										alt="guide2"
 										className="w-full h-full object-cover rounded-lg"
 									/>
@@ -299,7 +300,9 @@ export default function About() {
 							<Card>
 								<div className="h-64 overflow-hidden">
 									<img
-										src={guide3}
+										src={
+											"https://img.freepik.com/premium-photo/man-with-beard-eyeglasses-smiling-blur-background-camera-infront-him_973127-9650.jpg"
+										}
 										alt="guide3"
 										className="w-full h-full object-cover rounded-lg"
 									/>
@@ -335,7 +338,12 @@ export default function About() {
 							variants={fadeIn}
 							transition={{ duration: 1.5 }}>
 							<div className="flex items-center gap-3">
-								<Avatar src={Review1} size={50} />
+								<Avatar
+									src={
+										"https://img.freepik.com/premium-photo/portrait-young-handsome-blond-businessman-relaxing-coffee-shop-outdoors_251136-40639.jpg"
+									}
+									size={50}
+								/>
 								<p className="font-semibold mt-3">Jouan Alvarez</p>
 							</div>
 							<p className="mt-2 container text-justify">
@@ -351,7 +359,12 @@ export default function About() {
 							variants={fadeIn}
 							transition={{ duration: 1.6 }}>
 							<div className="flex items-center gap-3">
-								<Avatar src={Review2} size={50} />
+								<Avatar
+									src={
+										"https://us.123rf.com/450wm/yacobchuk/yacobchuk1810/yacobchuk181000391/109362401-handsome-man-close-up-of-handsome-bearded-blonde-haired-man-feeling-rather-thoughtful-and-serious.jpg?ver=6"
+									}
+									size={50}
+								/>
 								<p className="font-semibold mt-3">William W.</p>
 							</div>
 							<p className="mt-2 container text-justify">
@@ -367,7 +380,12 @@ export default function About() {
 							variants={fadeIn}
 							transition={{ duration: 1.7 }}>
 							<div className="flex items-center gap-3">
-								<Avatar src={Review3} size={50} />
+								<Avatar
+									src={
+										"https://img.freepik.com/free-photo/portrait-happy-young-woman-looking-camera_23-2147892777.jpg"
+									}
+									size={50}
+								/>
 								<p className="font-semibold mt-3">Emily Tatum</p>
 							</div>
 							<p className="mt-2 container text-justify">
