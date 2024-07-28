@@ -92,22 +92,22 @@ export default function Contact() {
 						<h3 className="text-xl font-semibold mb-4">Follow Us</h3>
 						<div className="flex space-x-4 ">
 							<a
-								href="https://facebook.com/kameltravel"
+								href="https://facebook.com/ismanchez"
 								className="text-blue-600 hover:text-blue-700">
 								<FaFacebookF size={24} />
 							</a>
 							<a
-								href="https://instagram.com/kameltravel"
+								href="https://instagram.com/its__sammael"
 								className="text-pink-500 hover:text-pink-600">
 								<FaInstagram size={24} />
 							</a>
 							<a
-								href="https://twitter.com/kameltravel"
+								href="#"
 								className="text-blue-400 hover:text-blue-500">
 								<FaTwitter size={24} />
 							</a>
 							<a
-								href="https://linkedin.com/company/kameltravel"
+								href="https://www.linkedin.com/in/ismailaek/"
 								className="text-blue-700 hover:text-blue-800">
 								<FaLinkedinIn size={24} />
 							</a>
