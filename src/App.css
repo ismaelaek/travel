@@ -2,7 +2,7 @@
 	border-bottom: solid rgba(128, 77, 53, 0.3) 2px;
 }
 .menu-item {
-    padding: 0 12px 12px;
+	padding: 0 12px 12px;
 	color: #804d35;
 	text-decoration: none;
 	font-size: 1.25rem;
@@ -16,11 +16,22 @@
 }
 
 .home {
+	position: relative;
 	min-height: 100vh;
-	background: url("./assets/home_bg.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+	overflow: hidden;
+}
+
+.home::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("./assets/home_bg.jpg") no-repeat center center;
 	background-size: cover;
+	filter: blur(2px);
+	z-index: -1;
 }
 .social-media {
 	text-decoration: none;
@@ -33,14 +44,21 @@
 .paragraph {
 	padding-bottom: 20px;
 	border-bottom: rgba(255, 255, 255, 0.7) solid 2px;
-    padding: 5px;
-    /* border-radius: 10px;
+	padding: 5px;
+	/* border-radius: 10px;
     backdrop-filter: blur(2px); 
     background-color: rgba(255, 255, 255, 0.1);  */
 }
 .about {
-    min-height: 100vh;
+	min-height: 100vh;
 	background: url("./assets/about2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.contact {
+	min-height: 80vh;
+	background: url("./assets/contact-wave.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

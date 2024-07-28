@@ -11,7 +11,7 @@ import Review3 from "../assets/review3.jpg";
 import guide1 from "../assets/guide1.png";
 import guide2 from "../assets/guide2.png";
 import guide3 from "../assets/guide3.png";
-import useScrollTrigger from "../hooks/useScrollTrigger"; // Adjust the path as needed
+import useScrollTrigger from "../hooks/useScrollTrigger";
 
 const fadeIn = {
 	hidden: { opacity: 0, y: 20 },
@@ -39,7 +39,7 @@ export default function About() {
 			<main className="about">
 				<Navbar />
 				<motion.div
-					className="mt-16 container bg-white rounded-lg w-full h-96 overflow-auto"
+					className="mt-16 container bg-white rounded-lg w-full h-2/3 overflow-auto"
 					initial="hidden"
 					animate={storyInView ? "visible" : "hidden"}
 					variants={fadeIn}
@@ -162,7 +162,7 @@ export default function About() {
 					transition={{ duration: 1.5 }}
 					ref={teamRef}>
 					<h1 className="text-center text-customBrown">Meet the Team</h1>
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
+					<div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 w-full">
 						<motion.div
 							className="shadow-md text-customBrown"
 							initial="hidden"
@@ -240,8 +240,6 @@ export default function About() {
 								</div>
 							</Card>
 						</motion.div>
-					</div>
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full mt-5 ">
 						<motion.div
 							className="shadow-md text-customBrown"
 							initial="hidden"
@@ -329,7 +327,7 @@ export default function About() {
 					<h1 className="text-center text-customBrown">
 						What they say about us
 					</h1>
-					<div className="grid grid-cols-1 text-customBrown md:grid-cols-3 gap-5 w-full">
+					<div className="grid grid-cols-1 text-customBrown lg:grid-cols-3 md:grid-cols-2 gap-5 w-full">
 						<motion.div
 							className="shadow-lg p-3 rounded-lg"
 							initial="hidden"

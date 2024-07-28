@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
-    "antd": "^5.18.1",
+    "antd": "^5.19.3",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.3.19",
     "react": "^18.2.0",

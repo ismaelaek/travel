@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				customBrown: "#804d35",
+				lightBrown: "#bfa69a",
 			},
 		},
 	},
