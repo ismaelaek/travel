@@ -4,8 +4,10 @@ export const toursData = [
 		name: "Majestic Moroccan Desert Adventure",
 		route: "Marrakech - Agdz - Merzouga - Dades Valley - Marrakech",
 		duration: "8 Days",
-		price: "$1,200 per person",
+		price: "$1,200",
 		dates: ["April 10-17, 2024", "October 5-12, 2024"],
+		description:
+			" This 8-day adventure will take you through the stunning landscapes of the Majestic Moroccan Desert, offering unforgettable views of the High Atlas Mountains, the Sahara Desert, and the vibrant Marrakech. The adventure will start in Marrakech and will end in Marrakech.",
 		itinerary: [
 			{
 				day: 1,
@@ -85,8 +87,10 @@ export const toursData = [
 		name: "Imperial Cities and Desert Dreams",
 		route: "Casablanca - Fes - Merzouga - Marrakech",
 		duration: "10 Days",
-		price: "$1,500 per person",
+		price: "$1,500",
 		dates: ["May 1-10, 2024", "November 15-24, 2024"],
+		description:
+			"This 10-day adventure will take you through the vibrant landscapes of the Imperial Cities and the Sahara Desert, offering unforgettable views of the High Atlas Mountains, the Sahara Desert, and the vibrant Marrakech. The adventure will start in Casablanca and will end in Marrakech.",
 		itinerary: [
 			{
 				day: 1,
@@ -169,8 +173,10 @@ export const toursData = [
 		name: "Atlas Mountains and Desert Safari",
 		route: "Marrakech - Ourika Valley - Ait Benhaddou - Merzouga",
 		duration: "7 Days",
-		price: "$1,100 per person",
+		price: "$1,100",
 		dates: ["June 10-16, 2024", "September 7-13, 2024"],
+		description:
+			"This 7-day adventure will take you through the picturesque landscapes of the Atlas Mountains and the Sahara Desert, offering unforgettable views of the High Atlas Mountains, the Sahara Desert, and the vibrant Marrakech. The adventure will start in Marrakech and will end in Merzouga.",
 		itinerary: [
 			{
 				day: 1,
@@ -219,7 +225,8 @@ export const toursData = [
 				activities: ["Transfer to airport", "Departure"],
 			},
 		],
-		image: "path/to/atlas-mountains-and-desert-safari-cover.jpg",
+		image:
+			"https://www.freetour.com/images/tours/20934/atlas-mountains-experience-01.jpg",
 		gallery: [
 			"path/to/atlas-mountains-and-desert-safari-gallery1.jpg",
 			"path/to/atlas-mountains-and-desert-safari-gallery2.jpg",
@@ -231,8 +238,10 @@ export const toursData = [
 		name: "Moroccan Coastal Wonders",
 		route: "Tangier - Chefchaouen - Asilah - Rabat",
 		duration: "6 Days",
-		price: "$950 per person",
+		price: "$950",
 		dates: ["July 15-20, 2024", "December 5-10, 2024"],
+		description:
+			"This 6-day adventure will take you through the picturesque landscapes of the Moroccan coast, offering unforgettable views of the Tangier, Chefchaouen, Asilah, and Rabat. The adventure will start in Tangier and will end in Rabat.",
 		itinerary: [
 			{
 				day: 1,
@@ -281,7 +290,8 @@ export const toursData = [
 				],
 			},
 		],
-		image: "path/to/moroccan-coastal-wonders-cover.jpg",
+		image:
+			"https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_765,h_535.5,c_limit/https://cdn.odysseytraveller.com/app/uploads/2020/01/Caves-of-Hercules-Morocco-GettyImages-1027277144.jpg",
 		gallery: [
 			"path/to/moroccan-coastal-wonders-gallery1.jpg",
 			"path/to/moroccan-coastal-wonders-gallery2.jpg",
@@ -293,8 +303,10 @@ export const toursData = [
 		name: "Cultural Morocco Explorer",
 		route: "Marrakech - Essaouira - Casablanca - Fes",
 		duration: "9 Days",
-		price: "$1,350 per person",
+		price: "$1,350",
 		dates: ["August 5-13, 2024", "November 20-28, 2024"],
+		description:
+			"This 9-day adventure will take you through the picturesque landscapes of Morocco, offering unforgettable views of the Marrakech, Essaouira, Casablanca, and Fes. The adventure will start in Marrakech and will end in Fes.",
 		itinerary: [
 			{
 				day: 1,
@@ -357,7 +369,8 @@ export const toursData = [
 				activities: ["Transfer to airport", "Departure"],
 			},
 		],
-		image: "path/to/cultural-morocco-explorer-cover.jpg",
+		image:
+			"https://c4.wallpaperflare.com/wallpaper/80/601/239/morocco-wallpaper-preview.jpg",
 		gallery: [
 			"path/to/cultural-morocco-explorer-gallery1.jpg",
 			"path/to/cultural-morocco-explorer-gallery2.jpg",
@@ -369,8 +382,10 @@ export const toursData = [
 		name: "Historical Moroccan Journey",
 		route: "Rabat - Meknes - Volubilis - Fes - Ifrane",
 		duration: "7 Days",
-		price: "$1,000 per person",
+		price: "$1,000",
 		dates: ["September 1-7, 2024", "December 10-16, 2024"],
+		description:
+			"This 7-day adventure will take you through the picturesque landscapes of Morocco, offering unforgettable views of the Rabat, Meknes, Volubilis, Fes, and Ifrane. The adventure will start in Rabat and will end in Ifrane.",
 		itinerary: [
 			{
 				day: 1,
@@ -423,7 +438,8 @@ export const toursData = [
 				activities: ["Transfer to airport", "Departure"],
 			},
 		],
-		image: "path/to/historical-moroccan-journey-cover.jpg",
+		image:
+			"https://img.freepik.com/premium-photo/volubilis-near-meknes-morocco-volubilis-is-ruined-amazigh-then-roman-city-morocco-near-meknes-unesco-world-heritage-site_268419-3.jpg",
 		gallery: [
 			"path/to/historical-moroccan-journey-gallery1.jpg",
 			"path/to/historical-moroccan-journey-gallery2.jpg",
@@ -435,8 +451,10 @@ export const toursData = [
 		name: "Moroccan Adventure and Culture",
 		route: "Marrakech - Ait Benhaddou - Ouarzazate - Skoura - Marrakech",
 		duration: "7 Days",
-		price: "$1,150 per person",
+		price: "$1,150",
 		dates: ["October 1-7, 2024", "January 10-16, 2025"],
+		description:
+			"This 7-day adventure will take you through the picturesque landscapes of Morocco, offering unforgettable views of Marrakech, Ait Benhaddou, Ouarzazate, Skoura, and Marrakech. The adventure will start in Marrakech and will end in Marrakech.",
 		itinerary: [
 			{
 				day: 1,
@@ -492,7 +510,8 @@ export const toursData = [
 				activities: ["Transfer to airport", "Departure"],
 			},
 		],
-		image: "path/to/moroccan-adventure-and-culture-cover.jpg",
+		image:
+			"https://storage.googleapis.com/hizan-network-app.appspot.com/marrakechtricks/aitbenhaddou/sunset2.jpeg",
 		gallery: [
 			"path/to/moroccan-adventure-and-culture-gallery1.jpg",
 			"path/to/moroccan-adventure-and-culture-gallery2.jpg",
@@ -504,8 +523,10 @@ export const toursData = [
 		name: "Moroccan Heritage and Nature",
 		route: "Casablanca - Marrakech - Ourika Valley - Essaouira",
 		duration: "8 Days",
-		price: "$1,200 per person",
+		price: "$1,200",
 		dates: ["November 1-8, 2024", "February 5-12, 2025"],
+		description:
+			"This 8-day adventure will take you through the picturesque landscapes of Morocco, offering unforgettable views of Casablanca, Marrakech, Ourika Valley, and Essaouira. The adventure will start in Casablanca and will end in Essaouira.",
 		itinerary: [
 			{
 				day: 1,
@@ -558,7 +579,8 @@ export const toursData = [
 				activities: ["Transfer to airport", "Departure"],
 			},
 		],
-		image: "path/to/moroccan-heritage-and-nature-cover.jpg",
+		image:
+			"https://www.desertmajesty.com/wp-content/uploads/2018/06/ourika-lunch.jpg",
 		gallery: [
 			"path/to/moroccan-heritage-and-nature-gallery1.jpg",
 			"path/to/moroccan-heritage-and-nature-gallery2.jpg",
