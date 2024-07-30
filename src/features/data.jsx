@@ -167,9 +167,14 @@ export const toursData = [
 		image:
 			"https://puremoroccotours.com/wp-content/uploads/2016/02/Moulay-Idriss.jpg",
 		gallery: [
-			"path/to/imperial-cities-and-desert-dreams-gallery1.jpg",
-			"path/to/imperial-cities-and-desert-dreams-gallery2.jpg",
-			"path/to/imperial-cities-and-desert-dreams-gallery3.jpg",
+			"https://www.voyages-au-maroc.org/wp-content/uploads/2021/09/casablanca.jpg",
+			"https://content.r9cdn.net/rimg/dimg/3e/75/4c51003a-city-26641-1655cc09179.jpg?width=1366&height=768&xhint=1490&yhint=1280&crop=true",
+			"https://static.medias24.com/content/uploads/2022/02/04/me%CC%81dina-casa.jpg?x22020",
+			"https://media.routard.com/image/80/9/fb-fes.1511809.jpg",
+			"https://media.tacdn.com/media/attractions-splice-spp-674x446/07/3a/c1/86.jpg",
+			"https://www.kamkamdunes.com/wp-content/uploads/2021/05/best-time-sahara-desert-merzouga.jpg",
+			"https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/3b/eb.jpg",
+			"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9f/11/0a/caption.jpg?w=1200&h=-1&s=1&cx=1920&cy=1080&chk=v1_8e5215ef0ffaccc19ef9",
 		],
 	},
 	{
@@ -233,9 +238,13 @@ export const toursData = [
 		image:
 			"https://www.freetour.com/images/tours/20934/atlas-mountains-experience-01.jpg",
 		gallery: [
-			"path/to/atlas-mountains-and-desert-safari-gallery1.jpg",
-			"path/to/atlas-mountains-and-desert-safari-gallery2.jpg",
-			"path/to/atlas-mountains-and-desert-safari-gallery3.jpg",
+			"https://passporterapp.com/en/blog/wp-content/uploads/2023/08/things-to-do-in-Marrakech.webp",
+			"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Pavillon_Menarag%C3%A4rten.jpg/800px-Pavillon_Menarag%C3%A4rten.jpg",
+			"https://www.moroccotoursagency.com/wp-content/uploads/2021/03/marrakech-to-ourika-day-tour.png",
+			"https://images.myguide-cdn.com/marrakech/companies/marrakech-atlas-mountains-ourika-valley-waterfall-lunch/large/marrakech-atlas-mountains-ourika-valley-waterfall-lunch-3536691.jpg",
+			"https://www.tripsavvy.com/thmb/_aff8TM0l0WAbZo4aPs41i_q-AE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-9862945081-e748ff3c94ed4303b7f9ec9ef00e2c23.jpg",
+			"https://moroccanzest.com/wp-content/uploads/2018/08/Ait-BenHaddou-Morocco-e1533762551769.jpg",
+			"https://cf.bstatic.com/xdata/images/hotel/max1024x768/353490611.jpg?k=d42f8ff9e95e44800acfbde7afd2bfeca8c6cacc521200f4c5893bf60ae8d2ca&o=&hp=1",
 		],
 	},
 	{
@@ -299,9 +308,13 @@ export const toursData = [
 		image:
 			"https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_765,h_535.5,c_limit/https://cdn.odysseytraveller.com/app/uploads/2020/01/Caves-of-Hercules-Morocco-GettyImages-1027277144.jpg",
 		gallery: [
-			"path/to/moroccan-coastal-wonders-gallery1.jpg",
-			"path/to/moroccan-coastal-wonders-gallery2.jpg",
-			"path/to/moroccan-coastal-wonders-gallery3.jpg",
+			"https://media.gq.com/photos/564b5ae85b03b0647d16556d/16:9/w_2560%2Cc_limit/rock-the-kasbah-gq-1215-5.jpg",
+			"https://www.infostourismemaroc.com/uploads/images/gallery/5ec3d5e928929_cap-spartel-tangier-tanja-city-morocco-infos-tourisme-maroc.jpg",
+			"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcrXH4QDsMX6JAYqu3u9d_2MgJL5JAWJpvIa-X1fIJuiKnCORynBJrhUbQIWAjyMEKHBtK-cwgSS8WnkMRKN6t3vnQO46KyG1KOZiEvoRLCkRN0cHTK4v668LP-I3d9lWlOMAvHDyALHrn/s1600/Asilah_medina_colorful_plants.jpg",
+			"https://www.tripsavvy.com/thmb/_pHRjBgnu9uG4Mq6hPgz4Q68KVo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/IMG_9592-5c5da9a746e0fb0001f24e38.jpg",
+			"https://c0.wallpaperflare.com/preview/864/964/18/morocco-rabat-mausoleum-marokko.jpg",
+			"https://content.r9cdn.net/rimg/dimg/d5/e5/012dfb42-city-12211-165b4a5fb55.jpg?crop=true&width=1020&height=498",
+			"https://www.visitmorocco.com/sites/default/files/styles/thumbnail_destination_background_top5/public/thumbnails/image/tour-hassan-rabat-morocco-by-migel.jpg?itok=YP8GLwSi",
 		],
 	},
 	{

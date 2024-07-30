@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./navbar";
-import { Avatar, Card } from "antd";
+import { Avatar, BackTop, Card } from "antd";
 import useScrollTrigger from "../hooks/useScrollTrigger";
 
 const fadeIn = {
@@ -397,6 +397,7 @@ export default function About() {
 					</div>
 				</motion.div>
 			</div>
+			<BackTop className=" z-10" visibilityHeight={500} />
 		</div>
 	);
 }

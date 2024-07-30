@@ -86,7 +86,7 @@ export default function Navbar() {
             </div>
             
 
-			<div className="hidden md:block w-1/4">
+			<div className="hidden lg:block w-1/4">
 				<Input
 					suffix={<GoSearch className="text-customBrown" />}
 					placeholder="Search..."

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { toursData } from "../features/data";
+import { toursData, siteCoordinates } from "../features/data";
 import Navbar from "./navbar";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import {
@@ -10,18 +10,16 @@ import {
 	Popup,
 	Polyline,
 } from "react-leaflet";
+import { Card, BackTop, Table, Button } from "antd";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { siteCoordinates } from "../features/data";
-import { Table, Button } from "antd";
 import "antd/dist/reset.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
-
-import { Card } from "antd";
 import { FaRoute } from "react-icons/fa";
 import { IoTime } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -31,6 +29,11 @@ L.Icon.Default.mergeOptions({
 		"https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png",
 	shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
 });
+
+const fadeInUp = {
+	hidden: { opacity: 0, y: 20 },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 export default function TourItem() {
 	const { id } = useParams();
@@ -67,7 +70,11 @@ export default function TourItem() {
 	return (
 		<div>
 			<Navbar />
-			<div className="container mt-10">
+			<motion.div
+				className="container mt-10"
+				initial="hidden"
+				animate="visible"
+				variants={fadeInUp}>
 				<h1 className="text-center">{tour.name}</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 					<img src={tour.image} alt="" width="100%" />
@@ -75,12 +82,16 @@ export default function TourItem() {
 						<p>{tour.description}</p>
 					</div>
 				</div>
-			</div>
-			<div className="container">
+			</motion.div>
+			<motion.div
+				className="container"
+				initial="hidden"
+				animate="visible"
+				variants={fadeInUp}>
 				<h2 className="text-center mt-10">Route Details</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2">
 					<div className="text-xl flex flex-col justify-center">
-						<div className=" md:flex md:gap-2 md:items-center">
+						<div className="md:flex md:gap-2 md:items-center">
 							<p className="text-gray-600">Route:</p>
 							<p>{tour.route}</p>
 						</div>
@@ -113,8 +124,12 @@ export default function TourItem() {
 						)}
 					</MapContainer>
 				</div>
-			</div>
-			<div className="container mt-5">
+			</motion.div>
+			<motion.div
+				className="container mt-5"
+				initial="hidden"
+				animate="visible"
+				variants={fadeInUp}>
 				<h2 className="text-center">Itinerary</h2>
 				<div>
 					{tour.itinerary.map((item, index) => {
@@ -133,8 +148,12 @@ export default function TourItem() {
 						);
 					})}
 				</div>
-			</div>
-			<div className="container">
+			</motion.div>
+			<motion.div
+				className="container"
+				initial="hidden"
+				animate="visible"
+				variants={fadeInUp}>
 				<h2 className="text-center">What's Included</h2>
 				<p className="flex items-center text-xl">
 					<IoCheckmarkOutline className="text-customBrown mr-2" />
@@ -158,8 +177,12 @@ export default function TourItem() {
 					<IoCheckmarkOutline className="text-customBrown mr-2" />
 					<span> Entrance tickets to listed sites </span>
 				</p>
-			</div>
-			<div className="container">
+			</motion.div>
+			<motion.div
+				className="container"
+				initial="hidden"
+				animate="visible"
+				variants={fadeInUp}>
 				<h2 className="text-center">Gallery</h2>
 				<Gallery>
 					<div className="flex flex-wrap gap-4 justify-center">
@@ -188,8 +211,12 @@ export default function TourItem() {
 						))}
 					</div>
 				</Gallery>
-			</div>
-			<div className="container mt-5">
+			</motion.div>
+			<motion.div
+				className="container mt-5"
+				initial="hidden"
+				animate="visible"
+				variants={fadeInUp}>
 				<h2 className="text-center">Scheduled Dates</h2>
 				<Table columns={columns} dataSource={dataSource} pagination={false} />
 				<div>
@@ -215,14 +242,18 @@ export default function TourItem() {
 						if necessary.
 					</p>
 				</div>
-			</div>
-			<div className=" container mb-4">
+			</motion.div>
+			<motion.div
+				className="container mb-4"
+				initial="hidden"
+				animate="visible"
+				variants={fadeInUp}>
 				<h2 className="text-center">You May Like</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 					{toursData.map((tour, index) => {
 						if (tour.id !== parseInt(id)) {
 							return (
-								<Card className=" shadow-md">
+								<Card className="shadow-md" key={index}>
 									<div className="h-64 overflow-hidden">
 										<img
 											src={tour.image}
@@ -233,24 +264,24 @@ export default function TourItem() {
 									<hr />
 									<Link
 										to={`/tours/${tour.id}`}
-										className=" no-underline text-black">
-										<h3 className=" hover:text-customBrown hover:underline duration-150">
+										className="no-underline text-black">
+										<h3 className="hover:text-customBrown hover:underline duration-150">
 											{tour.name}
 										</h3>
 									</Link>
 									<div>
-										<div className=" flex gap-2 items-center">
+										<div className="flex gap-2 items-center">
 											<FaRoute />
-											<p className=" m-0 p-0">{tour.route}</p>
+											<p className="m-0 p-0">{tour.route}</p>
 										</div>
-										<div className=" flex gap-2 items-center">
+										<div className="flex gap-2 items-center">
 											<IoTime />
-											<p className=" m-0 p-0">{tour.duration}</p>
+											<p className="m-0 p-0">{tour.duration}</p>
 										</div>
-										<div className=" flex justify-end">
+										<div className="flex justify-end">
 											<Link
 												to={`/tours/${tour.id}`}
-												className=" no-underline bg-customBrown text-white px-4 py-2 rounded-lg hover:bg-orange-900 duration-500">
+												className="no-underline bg-customBrown text-white px-4 py-2 rounded-lg hover:bg-orange-900 duration-500">
 												Read More
 											</Link>
 										</div>
@@ -261,7 +292,8 @@ export default function TourItem() {
 						return null;
 					})}
 				</div>
-			</div>
+			</motion.div>
+			<BackTop className="z-10" visibilityHeight={500} />
 		</div>
 	);
 }

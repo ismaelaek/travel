@@ -8,11 +8,13 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import "./App.css";
 import TourItem from "./components/tourItem";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
 	return (
 		<Provider store={store}>
 			<BrowserRouter>
+				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
