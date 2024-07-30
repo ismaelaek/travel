@@ -13,6 +13,16 @@ import {
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { siteCoordinates } from "../features/data";
+import { Table, Button } from "antd";
+import "antd/dist/reset.css";
+import { Gallery, Item } from "react-photoswipe-gallery";
+import "photoswipe/dist/photoswipe.css";
+
+import { Card } from "antd";
+import { FaRoute } from "react-icons/fa";
+import { IoTime } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
@@ -28,6 +38,31 @@ export default function TourItem() {
 	const routeCoordinates = tour.sites
 		.map((site) => siteCoordinates[site])
 		.filter(Boolean);
+
+	const columns = [
+		{
+			title: "Date",
+			dataIndex: "date",
+			key: "date",
+		},
+		{
+			title: "Price per person",
+			dataIndex: "price",
+			key: "price",
+			render: (text) => `${text} USD`,
+		},
+		{
+			title: "Book",
+			key: "book",
+			render: (_, record) => <Button type="primary">Book Now</Button>,
+		},
+	];
+
+	const dataSource = tour.dates.map((date, index) => ({
+		key: index,
+		date,
+		price: tour.price,
+	}));
 
 	return (
 		<div>
@@ -124,33 +159,109 @@ export default function TourItem() {
 					<span> Entrance tickets to listed sites </span>
 				</p>
 			</div>
-
-			{/* <div>
-				<h2 className="text-center">Book Now</h2>
-				<button className="w-full bg-customBrown hover:bg-customBrown-light text-white font-bold py-3 px-6 rounded-lg">
-					Book Now
-				</button>
-				<p className="text-center text-gray-600">
-					* Booking is subject to availability and confirmation.
-				</p>
-				<p className="text-center text-gray-600">
-					* Please contact our booking team for any special requests or
-					preferences.
-				</p>
-				<p className="text-center text-gray-600">
-					* We will provide you with a confirmation email after booking.
-				</p>
-				<p className="text-center text-gray-600">
-					* We may also need to provide you with a{" "}
-					<a
-						href="https://www.allianztravelinsurance.com/"
-						target="_blank"
-						className="text-customBrown">
-						travel insurance policy
-					</a>{" "}
-					if necessary.
-				</p>
-			</div> */}
+			<div className="container">
+				<h2 className="text-center">Gallery</h2>
+				<Gallery>
+					<div className="flex flex-wrap gap-4 justify-center">
+						{tour.gallery.map((image, index) => (
+							<Item
+								key={index}
+								original={image}
+								thumbnail={image}
+								width="1024"
+								height="768">
+								{({ ref, open }) => (
+									<img
+										ref={ref}
+										onClick={open}
+										src={image}
+										alt={`Gallery Image ${index + 1}`}
+										style={{
+											cursor: "pointer",
+											width: "150px", // Adjust size as needed
+											height: "auto",
+											objectFit: "cover",
+										}}
+									/>
+								)}
+							</Item>
+						))}
+					</div>
+				</Gallery>
+			</div>
+			<div className="container mt-5">
+				<h2 className="text-center">Scheduled Dates</h2>
+				<Table columns={columns} dataSource={dataSource} pagination={false} />
+				<div>
+					<h4 className="text-center mt-2">Notes</h4>
+					<p className="text-center text-gray-600">
+						* Booking is subject to availability and confirmation.
+					</p>
+					<p className="text-center text-gray-600">
+						* Please contact our booking team for any special requests or
+						preferences.
+					</p>
+					<p className="text-center text-gray-600">
+						* We will provide you with a confirmation email after booking.
+					</p>
+					<p className="text-center text-gray-600">
+						* We may also need to provide you with a{" "}
+						<a
+							href="https://www.allianztravelinsurance.com/"
+							target="_blank"
+							className="text-customBrown">
+							travel insurance policy
+						</a>{" "}
+						if necessary.
+					</p>
+				</div>
+			</div>
+			<div className=" container mb-4">
+				<h2 className="text-center">You May Like</h2>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+					{toursData.map((tour, index) => {
+						if (tour.id !== parseInt(id)) {
+							return (
+								<Card className=" shadow-md">
+									<div className="h-64 overflow-hidden">
+										<img
+											src={tour.image}
+											alt={tour.name}
+											className="w-full h-full object-cover rounded-lg hover:scale-110 ease-in-out duration-500 cursor-pointer"
+										/>
+									</div>
+									<hr />
+									<Link
+										to={`/tours/${tour.id}`}
+										className=" no-underline text-black">
+										<h3 className=" hover:text-customBrown hover:underline duration-150">
+											{tour.name}
+										</h3>
+									</Link>
+									<div>
+										<div className=" flex gap-2 items-center">
+											<FaRoute />
+											<p className=" m-0 p-0">{tour.route}</p>
+										</div>
+										<div className=" flex gap-2 items-center">
+											<IoTime />
+											<p className=" m-0 p-0">{tour.duration}</p>
+										</div>
+										<div className=" flex justify-end">
+											<Link
+												to={`/tours/${tour.id}`}
+												className=" no-underline bg-customBrown text-white px-4 py-2 rounded-lg hover:bg-orange-900 duration-500">
+												Read More
+											</Link>
+										</div>
+									</div>
+								</Card>
+							);
+						}
+						return null;
+					})}
+				</div>
+			</div>
 		</div>
 	);
 }

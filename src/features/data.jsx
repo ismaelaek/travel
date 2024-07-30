@@ -3,7 +3,7 @@ export const toursData = [
 		id: 1,
 		name: "Majestic Moroccan Desert Adventure",
 		route: "Marrakech - Agdz - Merzouga - Dades Valley - Marrakech",
-		sites: ["Marrakech" , "Agdz" , "Merzouga" , "Dades Valley" , "Marrakech"],
+		sites: ["Marrakech", "Agdz", "Merzouga", "Dades Valley", "Marrakech"],
 		duration: "8 Days",
 		price: "$1,200",
 		dates: ["April 10-17, 2024", "October 5-12, 2024"],
@@ -78,9 +78,11 @@ export const toursData = [
 		image:
 			"https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/00/30/7f.jpg",
 		gallery: [
-			"path/to/majestic-moroccan-desert-adventure-gallery1.jpg",
-			"path/to/majestic-moroccan-desert-adventure-gallery2.jpg",
-			"path/to/majestic-moroccan-desert-adventure-gallery3.jpg",
+			"https://www.visitmorocco.com/sites/default/files/styles/thumbnail_destination_background_top5/public/thumbnails/image/koutoubia-mosque-minaret-located-at-medina-quarter-of-marrakesh-morocco-balate-dorin.jpg?itok=08hAHERp",
+			"https://moroccanjews.org/wp-content/uploads/2020/10/agdz-draa-valley.jpg",
+			"https://www.vacances-desert.com/upload/photo_prestation_2563.jpg",
+			"https://www.morocco-ecotours.com/wp-content/uploads/2019/05/THE-DADES-VALLEY-FROM-OUARZAZATE.jpg",
+			"https://cf.bstatic.com/xdata/images/hotel/max1024x768/360465398.jpg?k=f58708d3769889eac054e1bed7bbc4d6dcc71b28db5e1f69aa0bfbb7ec5a320c&o=&hp=1",
 		],
 	},
 	{
