@@ -45,7 +45,7 @@ export default function TourItem() {
 				<h2 className="text-center mt-10">Route Details</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2">
 					<div className="text-xl flex flex-col justify-center">
-						<div className="flex gap-2 items-center">
+						<div className=" md:flex md:gap-2 md:items-center">
 							<p className="text-gray-600">Route:</p>
 							<p>{tour.route}</p>
 						</div>
@@ -59,8 +59,8 @@ export default function TourItem() {
 						</div>
 					</div>
 					<MapContainer
-						center={[31.7917, -7.0926]} 
-						zoom={6} 
+						center={[31.7917, -7.0926]}
+						zoom={6}
 						style={{ height: "500px", width: "100%" }}>
 						<TileLayer
 							url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -74,11 +74,7 @@ export default function TourItem() {
 							) : null
 						)}
 						{routeCoordinates.length > 1 && (
-							<Polyline
-								positions={routeCoordinates}
-								color="red" 
-								weight={7}
-							/>
+							<Polyline positions={routeCoordinates} color="red" weight={7} />
 						)}
 					</MapContainer>
 				</div>
