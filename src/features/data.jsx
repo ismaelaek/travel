@@ -3,6 +3,7 @@ export const toursData = [
 		id: 1,
 		name: "Majestic Moroccan Desert Adventure",
 		route: "Marrakech - Agdz - Merzouga - Dades Valley - Marrakech",
+		sites: ["Marrakech" , "Agdz" , "Merzouga" , "Dades Valley" , "Marrakech"],
 		duration: "8 Days",
 		price: "$1,200",
 		dates: ["April 10-17, 2024", "October 5-12, 2024"],
@@ -588,3 +589,21 @@ export const toursData = [
 		],
 	},
 ];
+
+
+export const siteCoordinates = {
+	Marrakech: [31.6304, -7.9811],
+	Agdz: [30.4521, -5.919],
+	Merzouga: [31.016, -4.0026],
+	"Dades Valley": [31.3316, -5.9379],
+	Casablanca: [33.5731, -7.589],
+	Fes: [34.0209, -4.9994],
+	Essaouira: [31.5149, -9.7592],
+	Tangier: [35.7672, -5.7997],
+	Chefchaouen: [35.1719, -5.262],
+	Asilah: [35.4667, -6.0333],
+	Rabat: [34.0209, -6.8416],
+	Meknes: [34.589, -5.582],
+	Volubilis: [34.0709, -5.5568],
+	Ifrane: [34.0209, -6.9304],
+};
