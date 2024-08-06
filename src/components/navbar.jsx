@@ -86,13 +86,13 @@ export default function Navbar() {
             </div>
             
 
-			<div className="hidden lg:block w-1/4">
+			{/* <div className="hidden lg:block w-1/4">
 				<Input
 					suffix={<GoSearch className="text-customBrown" />}
 					placeholder="Search..."
-					className="bg-transparent outline-none text-white placeholder-white border border-customBrown rounded-md"
+					className="bg-transparent outline-none text-white placeholder-white border border-customBrown rounded-md hidden"
 				/>
-			</div>
+			</div> */}
 		</nav>
 	);
 }
