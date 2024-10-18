@@ -33,7 +33,9 @@ export default function Navbar() {
 	return (
 		<nav className="navbar container pt-4 flex items-center justify-between">
 			<div className="text-2xl text-customBrown font-semibold">
-				<Link to={"/"} className=" no-underline text-black">Kamel Travels</Link>
+				<Link to={"/"} className=" no-underline text-customBrown">
+					Kamel Travels
+				</Link>
 			</div>
 
 			<Dropdown
