@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Input, Menu, Dropdown } from "antd";
 import { GoSearch } from "react-icons/go";
 
@@ -33,7 +33,7 @@ export default function Navbar() {
 	return (
 		<nav className="navbar container pt-4 flex items-center justify-between">
 			<div className="text-2xl text-customBrown font-semibold">
-				Kamel Travels
+				<Link to={"/"} className=" no-underline text-black">Kamel Travels</Link>
 			</div>
 
 			<Dropdown
@@ -41,8 +41,7 @@ export default function Navbar() {
 				overlay={mobileMenu}
 				trigger={["click"]}
 				onVisibleChange={(visible) => setIsMenuOpen(visible)}
-				className="md:hidden" 
-			>
+				className="md:hidden">
 				<button
 					className="block md:hidden text-2xl text-customBrown focus:outline-none"
 					onClick={toggleMenu}>
@@ -69,22 +68,21 @@ export default function Navbar() {
 						)}
 					</svg>
 				</button>
-            </Dropdown>
-            <div className="hidden md:block w-1/4 ">
-                <NavLink className="menu-item" to={"/"}>
-                    Home
-                </NavLink>
-                <NavLink className="menu-item" to={"/tours"}>
-                    Tours
-                </NavLink>
-                <NavLink className="menu-item" to={"/about"}>
-                    About
-                </NavLink>
-                <NavLink className="menu-item" to={"/contact"}>
-                    Contact
-                </NavLink>
-            </div>
-            
+			</Dropdown>
+			<div className="hidden md:block w-1/4 ">
+				<NavLink className="menu-item" to={"/"}>
+					Home
+				</NavLink>
+				<NavLink className="menu-item" to={"/tours"}>
+					Tours
+				</NavLink>
+				<NavLink className="menu-item" to={"/about"}>
+					About
+				</NavLink>
+				<NavLink className="menu-item" to={"/contact"}>
+					Contact
+				</NavLink>
+			</div>
 
 			{/* <div className="hidden lg:block w-1/4">
 				<Input
